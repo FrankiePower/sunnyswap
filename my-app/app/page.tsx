@@ -24,7 +24,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <svg
             className="absolute inset-0 w-full h-full"
-            viewBox="0 0 1200 800"
+            viewBox="0 0 1100 800"
             preserveAspectRatio="xMidYMid slice"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
