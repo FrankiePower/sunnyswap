@@ -184,56 +184,17 @@ export default function HomePage() {
           </LineShadowText>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors text-sm lg:text-base">
-            Features
-          </a>
-          <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors text-sm lg:text-base">
-            Documentation
-          </a>
-          <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors text-sm lg:text-base">
-            About
-          </a>
-          <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors text-sm lg:text-base">
-            Contact
-          </a>
-        </nav>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden text-white p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-          <Menu className="w-6 h-6" />
-        </button>
 
         {address ? (
           <ConnectButton chainStatus="icon" accountStatus="avatar" showBalance={false} />
         ) : (
-          <ShimmerButton className="hidden md:flex bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-4 lg:px-6 py-2 rounded-xl text-sm lg:text-base font-medium shadow-lg">
+          <ShimmerButton className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-4 lg:px-6 py-2 rounded-xl text-sm lg:text-base font-medium shadow-lg">
             Connect Wallet
           </ShimmerButton>
         )}
       </header>
 
-      {mobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 z-20">
-          <nav className="flex flex-col space-y-4 px-6 py-6">
-            <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors">
-              Features
-            </a>
-            <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors">
-              Documentation
-            </a>
-            <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors">
-              About
-            </a>
-            <a href="#" className="text-white/80 hover:text-yellow-300 transition-colors">
-              Contact
-            </a>
-            <ShimmerButton className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-6 py-2.5 rounded-xl text-sm font-medium shadow-lg w-fit">
-              Connect Wallet
-            </ShimmerButton>
-          </nav>
-        </div>
-      )}
 
       {/* Main Content */}
       <main className="relative z-10 flex flex-col items-start justify-start sm:justify-center min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-12 max-w-6xl pt-4 sm:-mt-12 lg:-mt-24 pl-6 sm:pl-12 lg:pl-20">
