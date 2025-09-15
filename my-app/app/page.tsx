@@ -178,11 +178,10 @@ export default function HomePage() {
 
       {/* Header Navigation */}
       <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 py-4 lg:px-12">
-        <div className="flex items-center space-x-2 pl-3 sm:pl-6 lg:pl-12">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 flex items-center justify-center text-xl font-bold">
-            ☀️
-          </div>
-          <span className="text-yellow-400 font-bold text-lg hidden sm:block">SunnySwap</span>
+        <div className="flex items-center pl-3 sm:pl-6 lg:pl-12">
+          <LineShadowText className="text-xl sm:text-xl lg:text-xl font-bold">
+            SunnySwap
+          </LineShadowText>
         </div>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
@@ -404,9 +403,9 @@ function SwapPage({ onBack }: { onBack: () => void }) {
             >
               ← Back
             </ShimmerButton>
-            <div className="text-2xl font-bold text-yellow-400">
-              SunnySwap
-            </div>
+            <LineShadowText className="text-2xl sm:text-3xl font-bold">
+              SUNNYSWAP
+            </LineShadowText>
           </div>
           <div className="flex items-center gap-4">
             {evmSigner && (
