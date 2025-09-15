@@ -184,15 +184,6 @@ export default function HomePage() {
           </LineShadowText>
         </div>
 
-
-
-        {address ? (
-          <ConnectButton chainStatus="icon" accountStatus="avatar" showBalance={false} />
-        ) : (
-          <ShimmerButton className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-4 lg:px-6 py-2 rounded-xl text-sm lg:text-base font-medium shadow-lg">
-            Connect Wallet
-          </ShimmerButton>
-        )}
       </header>
 
 
@@ -364,9 +355,6 @@ function SwapPage({ onBack }: { onBack: () => void }) {
             >
               ← Back
             </ShimmerButton>
-            <LineShadowText className="text-2xl sm:text-3xl font-bold">
-              SUNNYSWAP
-            </LineShadowText>
           </div>
           <div className="flex items-center gap-4">
             {evmSigner && (
